@@ -14,6 +14,7 @@
     --pent-color: #4d774e;
 }
 
+
 /* header */
 header {
     padding: 20px 35px;
@@ -93,11 +94,13 @@ header nav ul li a:hover {
     font-size: 30px;
     color: var(--sec-color);
 }
+/* End of hero styling */
 
 body {
     background-color: var(--pent-color);
 }
 
+/* Border of profile picture */
 .hex {
     display: block;
     margin: 30px auto;
@@ -112,7 +115,6 @@ body {
 
   .hex-background {
     position: absolute;
-    background-color: orange; /*color of the main-background*/
     top: 2px; /* equal to border thickness */
     left: 2px; /* equal to border thickness */
     width: 316px; /* container height - (border thickness * 2) */
@@ -129,3 +131,216 @@ body {
     -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
     -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
   }
+/* End of profile picture styling */
+
+/* Styling for all section titles */
+.flex-row {
+    display: flex;
+}
+.section-title {
+    border-bottom: 3px solid var(--sec-color);
+    width: 20%;
+    color: var(--tert-color);
+    font-size: 40px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+}
+
+/* Styling for "About me" section */
+.anchor-about-me {
+    display: block;
+    position: relative;
+    top: -415px;
+    visibility: hidden;
+}
+
+.bio {
+    padding-bottom: 40px;
+}
+
+.bio p {
+    color: var(--tert-color);
+    font-size: 20px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; 
+}
+
+/* Start of "Portfolio" section styling */
+.anchor-portfolio {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
+
+.work {
+    background-color: var(--quad-color);
+    padding: 30px;
+    text-align: center;
+}
+
+/* Show piece styling */
+.main-project {
+    padding-bottom: 10px;
+}
+
+.main-project a {
+    position: relative;
+}
+.main-project img {
+    border: 5px solid var(--sec-color);
+    max-width: 100%;
+    height: auto;
+}
+
+.work-primary {
+    position: absolute;
+    text-decoration: none;
+    bottom: 16px;
+    left: 5px;
+    background-color: var(--sec-color);
+    color: var(--tert-color);
+    width: 150px;
+}
+/* End of show piece styling */
+
+/* Start of alt work styling */
+.second-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.sec-project a {
+    position: relative;
+}
+
+.sec-project img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid var(--sec-color);
+}
+
+.work-sec {
+    position: absolute;
+    text-decoration: none;
+    bottom: 16px;
+    left: 5px;
+    background-color: var(--sec-color);
+    color: var(--tert-color);
+    width: 120px;
+}
+
+/* Third work styling */
+
+
+.tert-project a {
+    position: relative;
+}
+
+.tert-project img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid var(--sec-color);
+}
+
+.work-third {
+    position: absolute;
+    text-decoration: none;
+    bottom: 16px;
+    left: 5px;
+    background-color: var(--sec-color);
+    color: var(--tert-color);
+    width: 120px;
+}
+
+/* Fourth work styling */
+.third-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.quad-project a {
+    position: relative;
+}
+
+.quad-project img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid var(--sec-color);
+}
+
+.work-fourth {
+    position: absolute;
+    text-decoration: none;
+    bottom: 16px;
+    left: 5px;
+    background-color: var(--sec-color);
+    color: var(--tert-color);
+    width: 120px;
+}
+
+/* Fifth work styling */
+.pent-project a {
+    position: relative;
+}
+
+.pent-project img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid var(--sec-color);
+}
+
+.work-fifth {
+    position: absolute;
+    text-decoration: none;
+    bottom: 16px;
+    left: 5px;
+    background-color: var(--sec-color);
+    color: var(--tert-color);
+    width: 120px;
+}
+/* End of "Portfolio" section */
+
+/* Start of "Contact" styling */
+.comms ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.comms ul li {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+
+.comms {
+    color: var(--tert-color);
+}
+
+.comms a {
+    text-decoration: none;
+    color: var(--tert-color);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 35px;
+}
+
+footer div {
+    line-height: 1.5;
+    text-align: center;
+    font-size: 12px;
+}
+
+.highlight-2 {
+    font-size: 12px;
+    color: var(--sec-color);
+}
