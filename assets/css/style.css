@@ -210,6 +210,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-left: 379px;
+    margin-right: 379px;
 }
 
 .sec-project a {
@@ -260,6 +262,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-left: 379px;
+    margin-right: 379px;
 }
 .quad-project a {
     position: relative;
@@ -304,6 +308,9 @@ body {
 /* End of "Portfolio" section */
 
 /* Start of "Contact" styling */
+.reach {
+    padding-top: 25px;
+}
 .comms ul {
     display: flex;
     flex-wrap: wrap;
@@ -352,3 +359,67 @@ footer div {
     color: var(--sec-color);
 }
 
+/* Start of media queries */
+@media screen and (max-width: 980px) {
+    /* Remove sticky header function to give space for smaller screens */
+    header {
+        padding-bottom: 0;
+        justify-content: space-evenly;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 25px;
+    }
+
+    .anchor-about-me {
+        top: -335px;
+    }
+
+    .anchor-portfolio {
+        top: -20px;
+    }
+
+    .second-row {
+        margin-left: -85px;
+        margin-right: -85px;
+    }
+
+    .third-row {
+        margin-left: -85px;
+        margin-right: -85px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-title {
+        font-size: 30px;
+    }
+
+    .second-row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .third-row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .section-title {
+        font-size: 25px;
+    }
+}
