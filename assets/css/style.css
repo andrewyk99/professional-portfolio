@@ -68,6 +68,20 @@ header nav ul li a:hover {
     border-radius: 15px;
     text-shadow: none;
 }
+/* Tweaks for header links */
+.anchor-about-me {
+    display: block;
+    position: relative;
+    top: -415px;
+    visibility: hidden;
+}
+
+.anchor-portfolio {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
 /* End of header styling */
 
 /* Start of Hero styling */
@@ -106,7 +120,7 @@ body {
     margin: 30px auto;
     position: relative;
     width: 320px;
-    height: 277.12px; /* width * 0.866 */
+    height: 277.12px;
     background: var(--quad-color);
     box-sizing: border-box;
     -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
@@ -115,10 +129,10 @@ body {
 
   .hex-background {
     position: absolute;
-    top: 2px; /* equal to border thickness */
-    left: 2px; /* equal to border thickness */
-    width: 316px; /* container height - (border thickness * 2) */
-    height: 273.12px; /* container height - (border thickness * 2) */
+    top: 2px;
+    left: 2px;
+    width: 316px;
+    height: 273.12px;
     -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
     -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
   }
@@ -147,13 +161,6 @@ body {
 }
 
 /* Styling for "About me" section */
-.anchor-about-me {
-    display: block;
-    position: relative;
-    top: -415px;
-    visibility: hidden;
-}
-
 .bio {
     padding-bottom: 40px;
 }
@@ -167,13 +174,6 @@ body {
 }
 
 /* Start of "Portfolio" section styling */
-.anchor-portfolio {
-    display: block;
-    position: relative;
-    top: -100px;
-    visibility: hidden;
-}
-
 .work {
     background-color: var(--quad-color);
     padding: 30px;
@@ -210,8 +210,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-left: 379px;
-    margin-right: 379px;
+    margin-left: 379px; /* to align with the main project */
+    margin-right: 379px; /* to align with the main project */
 }
 
 .sec-project a {
@@ -262,8 +262,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-left: 379px;
-    margin-right: 379px;
+    margin-left: 379px; /* to align with main project */
+    margin-right: 379px; /* to align with main project */
 }
 .quad-project a {
     position: relative;
@@ -360,6 +360,7 @@ footer div {
 }
 
 /* Start of media queries */
+/* For smaller desktops/laptops */
 @media screen and (max-width: 980px) {
     /* Remove sticky header function to give space for smaller screens */
     header {
@@ -402,6 +403,7 @@ footer div {
     }
 }
 
+/* For tablets */
 @media screen and (max-width: 768px) {
     .section-title {
         font-size: 30px;
@@ -418,6 +420,7 @@ footer div {
     }
 }
 
+/* For phones */
 @media screen and (max-width: 575px) {
     .section-title {
         font-size: 25px;
